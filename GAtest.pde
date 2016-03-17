@@ -5,11 +5,18 @@ int[] model_answer ={
 
 Population pop = new Population();
 
-void setup(){
-  pop.grading();
-  pop.killing();
-  pop.ranking();
+void setup() {
+  int i = 0;
+  
+  while (i != 100) {
+    pop.grading();
+    pop.ranking();
+    pop.killing();
+    pop.birth();
+    
+    i++;
+  }
 }
 
-void draw(){
+void draw() {
 }

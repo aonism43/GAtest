@@ -16,8 +16,13 @@ class MatchBox {
     return this.point;
   }
   
+  public void set_answer(int[] a){
+    this.answer = a;
+  }
   
   public void grading(){
+    this.point = 0;
+    
     for(int i=0; i<QUESTION_NUMBER; i++)
       if(this.answer[i] == model_answer[i]) this.point++;
   }
