@@ -1,10 +1,10 @@
 class Utility{
 
-  public int max(ArrayList<MatchBox> array){
-    int max = array.get(0).get_point();
+  public int max(MatchBox[] array){
+    int max = array[0].get_point();
     
-    for(int i=1; i<array.size(); i++)
-      if(max<array.get(i).get_point()) max = array.get(i).get_point();
+    for(int i=1; i<array.length; i++)
+      if(max<array[i].get_point()) max = array[i].get_point();
       
       return max;
   }
