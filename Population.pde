@@ -1,4 +1,5 @@
 class Population{
+  private Utility util = new Utility();
   private int INDIVIDUALS_NUMBER = 10;
   
   private MatchBox[] population = new MatchBox[INDIVIDUALS_NUMBER];
