@@ -42,6 +42,8 @@ class Population{
         }
       }
     }
-          
+    
+   this.population[0] = null;
+   this.population[1] = null;
   }
 }
