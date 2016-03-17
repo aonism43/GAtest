@@ -21,5 +21,27 @@ class Population{
   }
   
   public void killing(){
+    //ソート
+    //TODO:あとでsmartに書く
+    
+    int[] point = new int[INDIVIDUALS_NUMBER];
+    
+    for(int i=0; i<INDIVIDUALS_NUMBER; i++)
+        point[i] =this.population[i].get_point();
+        
+    point = sort(point);
+    
+    MatchBox dumy = null;
+    
+    for(int i=0; i<INDIVIDUALS_NUMBER; i++){
+      for(int j=0; j<INDIVIDUALS_NUMBER; j++){
+        if(point[i] == population[j].get_point()){
+          dumy= population[i];
+          population[i] = population[j];
+          population[j] = dumy;
+        }
+      }
+    }
+          
   }
 }

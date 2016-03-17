@@ -7,6 +7,7 @@ Population pop = new Population();
 
 void setup(){
   pop.grading();
+  pop.killing();
   pop.ranking();
 }
 
